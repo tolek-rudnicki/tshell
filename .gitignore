@@ -1,0 +1,4 @@
+./__pycache__
+./commands/__pycache__
+./errors/__pycache__
+./libs/__pycache__
