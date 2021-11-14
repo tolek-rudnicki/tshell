@@ -3,7 +3,7 @@ import libs.commands as c
 
 def run(args):
     if(len(args) < 2):
-        # throw no args error
+        er.TooLittleArgsError("cat")
         pass
     else:
         f = open(args[1], "r+")

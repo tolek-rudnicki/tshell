@@ -1,11 +1,7 @@
 import errors.e as er
 import commands.help as help
 import commands.cat as cat
-
-commands = {
-    "test": "-a --all -h --help",
-    "test123": ""
-}
+import libs.commands as c
 
 def parse(command):
     args = command.split(" ")
