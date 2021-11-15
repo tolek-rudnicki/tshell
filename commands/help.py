@@ -6,9 +6,10 @@ def run(args):
             if (c.commands.__contains__(args[1])):
                 cmd_args = c.commands.get(args[1])
                 clist = cmd_args.split(" ")
-                for i in clist:
-                    print("         " + i)
+                for command in clist:
+                    print("\t" + command)
             else:
                 return er.UnknownCommandError(args[1])
     else:
-        print("help [command] - shows this menu or shows arguments of given command")
+        for i in c.commands:
+            print(i)
