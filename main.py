@@ -3,7 +3,7 @@ import getpass
 import platform
 import os
 from libs.colors import *
-import libs.variables as vars
+
 
 while (True):
     path = os.getcwd()

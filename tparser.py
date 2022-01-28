@@ -5,7 +5,6 @@ import commands.cat as cat
 import commands.ls as ls
 import commands.clear as clear
 import commands.cd as cd
-import commands.unlock as unlock
 import commands.man as man
 import commands.make as make
 import commands.lolcat as lolcat
@@ -27,8 +26,6 @@ def parse(command):
         cd.run(args)
     elif (cmd == "clear"):
         clear.run()
-    elif (cmd == "unlock"):
-        unlock.run(args)
     elif (cmd == "man"):
         man.run(args)
     elif (cmd == "make"):
