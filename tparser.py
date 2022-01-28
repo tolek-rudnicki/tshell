@@ -7,6 +7,8 @@ import commands.clear as clear
 import commands.cd as cd
 import commands.unlock as unlock
 import commands.man as man
+import commands.make as make
+import commands.lolcat as lolcat
 
 import libs.commands as c
 
@@ -15,11 +17,6 @@ def parse(command):
     cmd = args[0]
     if (cmd == "help"):
         help.run(args)
-    elif (cmd == "test"):
-        if(len(args) < 2): 
-            print("test") 
-        else: 
-            print("test123")
     elif (cmd == "cat"):
         cat.run(args)
     elif (cmd == "ls"):
@@ -34,5 +31,9 @@ def parse(command):
         unlock.run(args)
     elif (cmd == "man"):
         man.run(args)
+    elif (cmd == "make"):
+        make.run(args)
+    elif (cmd == "lolcat"):
+        lolcat.run(args)
     else:
         return er.UnknownCommandError(cmd)

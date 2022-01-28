@@ -1,0 +1,1 @@
+To run tshell do: `python3 main.py`, it may seem that nothing has happened, but don't be fooled the program is alredy running!
